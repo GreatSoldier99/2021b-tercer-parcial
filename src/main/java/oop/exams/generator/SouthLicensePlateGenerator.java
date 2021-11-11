@@ -40,7 +40,6 @@ public class SouthLicensePlateGenerator implements LicensePlateGenerator {
         }
 
         StringBuffer generatedPlate = new StringBuffer("4" + plate);
-
         generatedPlate.insert(randomIndex, state);
 
         return generatedPlate.toString();

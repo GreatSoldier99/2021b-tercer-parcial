@@ -10,7 +10,7 @@ import static org.assertj.core.api.Assertions.assertThatThrownBy;
 public class EastLicensePlateGeneratorTest {
 
     @Test
-    public void givenAEastState_whenGenerate_thenLicensePlateStartsWith1() {
+    public void givenAEastState_whenGenerate_thenLicensePlateStartsWith3() {
 
         // Given:
         LicensePlateGenerator licensePlateProvider = new EastLicensePlateGenerator();

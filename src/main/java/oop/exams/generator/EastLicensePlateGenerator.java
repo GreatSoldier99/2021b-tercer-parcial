@@ -28,14 +28,14 @@ public class EastLicensePlateGenerator implements LicensePlateGenerator {
         String plate = "";
         Random random = new Random();
 
-        for (int i = 0; i < 2; i++) {
-            plate = plate + random.nextInt(9);
-        }
-
         try {
             validateStateCode(state);
         } catch(BadRegionException ex) {
             throw ex;
+        }
+
+        for (int i = 0; i < 2; i++) {
+            plate = plate + random.nextInt(9);
         }
 
         return '3' + plate + 'Z';
